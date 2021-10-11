@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "info_gnrls",
+  "info": {
+    "name": "info_gnrl"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_codes": {
+      "type": "component",
+      "repeatable": false,
+      "component": "discounts.plan-codes"
+    }
+  }
+}

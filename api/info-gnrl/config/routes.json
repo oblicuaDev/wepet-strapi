@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/info-gnrl",
+      "handler": "info-gnrl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/info-gnrl",
+      "handler": "info-gnrl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/info-gnrl",
+      "handler": "info-gnrl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

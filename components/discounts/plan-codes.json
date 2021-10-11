@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_discounts_plan_codes",
+  "info": {
+    "name": "plan_codes",
+    "icon": "calculator"
+  },
+  "options": {},
+  "attributes": {
+    "plan_completo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discounts.plan-completo"
+    },
+    "plan_basico": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discounts.plan-completo"
+    },
+    "plan_medio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discounts.plan-completo"
+    },
+    "plan_gratuito": {
+      "type": "component",
+      "repeatable": true,
+      "component": "discounts.plan-completo"
+    }
+  }
+}

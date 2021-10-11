@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_discounts_plan_completos",
+  "info": {
+    "name": "plan_completo",
+    "icon": "certificate"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "integer"
+    }
+  }
+}
