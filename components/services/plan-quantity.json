@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_services_plan_quantities",
+  "info": {
+    "name": "plan_quantity",
+    "icon": "tasks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "plan": {
+      "model": "plans"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

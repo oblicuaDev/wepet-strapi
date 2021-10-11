@@ -1,18 +1,21 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "informations",
   "info": {
-    "name": "services",
+    "name": "hoy_wepet",
     "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
     "name": {
+      "type": "string"
+    },
+    "link": {
       "type": "string"
     },
     "image": {
@@ -26,19 +29,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "providers": {
-      "collection": "providers",
-      "via": "services",
-      "dominant": true
-    },
-    "plan_quantity": {
-      "type": "component",
-      "repeatable": true,
-      "component": "services.plan-quantity"
     }
   }
 }
