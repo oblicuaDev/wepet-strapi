@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wepetusers",
+  "info": {
+    "name": "wepetusers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "doc_type": {
+      "type": "string"
+    },
+    "doc_num": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "pets": {
+      "collection": "pets",
+      "via": "wepetuser"
+    }
+  }
+}

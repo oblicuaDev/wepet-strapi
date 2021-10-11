@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wepetusers",
+      "handler": "wepetusers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wepetusers/count",
+      "handler": "wepetusers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wepetusers/:id",
+      "handler": "wepetusers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wepetusers",
+      "handler": "wepetusers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wepetusers/:id",
+      "handler": "wepetusers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wepetusers/:id",
+      "handler": "wepetusers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

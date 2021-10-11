@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pets",
+  "info": {
+    "name": "pets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "type": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "breed": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "age": {
+      "type": "string"
+    },
+    "hair_size": {
+      "type": "string"
+    },
+    "hair_color": {
+      "type": "string"
+    },
+    "sterilized": {
+      "type": "boolean"
+    },
+    "food": {
+      "type": "string"
+    },
+    "allergies": {
+      "type": "text"
+    },
+    "record": {
+      "type": "text"
+    },
+    "vaccines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "salud.vaccines"
+    },
+    "wepetuser": {
+      "via": "pets",
+      "model": "wepetusers"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_salud_vaccines",
+  "info": {
+    "name": "vaccines",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "date_application": {
+      "type": "date"
+    },
+    "due_date": {
+      "type": "date"
+    },
+    "lote": {
+      "type": "string"
+    },
+    "veterinarian": {
+      "type": "string"
+    },
+    "reminder": {
+      "type": "boolean"
+    }
+  }
+}
