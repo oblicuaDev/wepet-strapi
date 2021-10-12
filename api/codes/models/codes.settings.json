@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "codes",
+  "info": {
+    "name": "codes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "plan": {
+      "model": "plans"
+    },
+    "category": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "biginteger"
+    }
+  }
+}

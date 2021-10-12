@@ -10,12 +10,10 @@
     "timestamps": true,
     "draftAndPublish": true
   },
-  "pluginOptions": {},
-  "attributes": {
-    "plan_codes": {
-      "type": "component",
-      "repeatable": true,
-      "component": "discounts.plan-codes"
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
     }
-  }
+  },
+  "attributes": {}
 }
