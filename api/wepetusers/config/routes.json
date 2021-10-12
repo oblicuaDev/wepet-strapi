@@ -9,6 +9,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/wepetusers/login",
+      "handler": "wepetusers.login",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "GET",
       "path": "/wepetusers/count",
       "handler": "wepetusers.count",
@@ -25,9 +33,25 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/wepetusers/pets/:id",
+      "handler": "wepetusers.userPets",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/wepetusers",
       "handler": "wepetusers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wepetusers/recover-password",
+      "handler": "wepetusers.resetPassword",
       "config": {
         "policies": []
       }
