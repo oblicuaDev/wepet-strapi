@@ -76,6 +76,10 @@
     },
     "services": {
       "type": "json"
+    },
+    "plan": {
+      "model": "plans",
+      "via": "pets"
     }
   }
 }

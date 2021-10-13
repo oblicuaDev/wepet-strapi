@@ -39,6 +39,10 @@
           "localized": true
         }
       }
+    },
+    "pets": {
+      "via": "plan",
+      "collection": "pets"
     }
   }
 }

@@ -48,6 +48,9 @@
     "pets": {
       "via": "wepetuser",
       "collection": "pets"
+    },
+    "plan": {
+      "model": "plans"
     }
   }
 }
