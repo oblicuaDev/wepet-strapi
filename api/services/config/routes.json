@@ -18,12 +18,21 @@
     },
     {
       "method": "GET",
+      "path": "/services/planquantity/:planId",
+      "handler": "services.getplanquantity",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/services/:id",
       "handler": "services.findOne",
       "config": {
         "policies": []
       }
     },
+   
     {
       "method": "POST",
       "path": "/services",
