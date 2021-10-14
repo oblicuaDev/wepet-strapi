@@ -64,8 +64,8 @@ module.exports = {
       id,
     });
 
-    if (response.pet) {
-      if (response.pet.length > 0) {
+    if (response.pets) {
+      if (response.pets.length > 0) {
         return ctx.send({ pets: response.pets }, 200);
       }
     } else {
