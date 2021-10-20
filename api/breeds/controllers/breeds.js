@@ -9,10 +9,10 @@ module.exports = {
   create: async (ctx) => {
     if (Array.isArray(ctx.request.body)) {
       return await Promise.all(
-        ctx.request.body.map(strapi.services.foods.create)
+        ctx.request.body.map(strapi.services.breeds.create)
       );
     } else {
-      return strapi.services.foods.create(ctx.request.body);
+      return strapi.services.breeds.create(ctx.request.body);
     }
   },
 };
