@@ -57,6 +57,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/wepetusers/change-password/:token",
+      "handler": "wepetusers.changePassword",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/wepetusers/:id",
       "handler": "wepetusers.update",

@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/tokens/:id",
+      "path": "/tokens/:token",
       "handler": "tokens.delete",
       "config": {
         "policies": []

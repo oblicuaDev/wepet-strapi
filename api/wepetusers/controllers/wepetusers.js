@@ -98,4 +98,29 @@ module.exports = {
       );
     }
   },
+  changePassword: async (ctx) => {
+    const { token } = ctx.params;
+    let user = ctx.request.body;
+    const tokenfound = await strapi.services.tokens.findOne({ token });
+    const userFound = await strapi.services.wepetusers.findOne({
+      token: tokenfound.id,
+    });
+    const hashedPassword = await bcrypt.hash(user.password, 10);
+    user.password = hashedPassword;
+    if (userFound) {
+      strapi.services.wepetusers.update({ id: userFound.id }, user);
+      let respuesta = {
+        msg: "User password change.",
+      };
+      const tokenDelete = await strapi.services.tokens.delete({ token });
+      if (tokenDelete) {
+        return ctx.send(respuesta, 200);
+      }
+    } else {
+      let respuesta = {
+        msg: "User not found.",
+      };
+      return ctx.send(respuesta, 400);
+    }
+  },
 };

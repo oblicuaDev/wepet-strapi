@@ -22,8 +22,8 @@ module.exports = {
     );
   },
   async delete(ctx) {
-    const { id } = ctx.params;
-    const entity = await strapi.services.tokens.delete({ id });
+    const { token } = ctx.params;
+    const entity = await strapi.services.tokens.delete({ token });
     return sanitizeEntity(entity, { model: strapi.models.tokens });
   },
 };
