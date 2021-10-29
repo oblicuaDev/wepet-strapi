@@ -54,6 +54,11 @@
     },
     "token": {
       "model": "tokens"
+    },
+    "pay_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pay-data.pay-data"
     }
   }
 }

@@ -15,6 +15,7 @@ module.exports = {
 
       if (entity) {
         let result = await bcrypt.compare(password, entity.password);
+        console.log(result);
         if (result) {
           return ctx.send({ response: entity }, 200);
         } else {

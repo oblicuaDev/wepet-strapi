@@ -16,10 +16,19 @@ module.exports = {
     }
     const tokencreated = await strapi.services.tokens.create({ token: token });
     const user = await strapi.services.wepetusers.findOne({ email });
-    return strapi.services.wepetusers.update(
-      { id: user.id },
-      { token: tokencreated.id }
-    );
+    if (user) {
+      return strapi.services.wepetusers.update(
+        { id: user.id },
+        { token: tokencreated.id }
+      );
+    } else {
+      return ctx.send(
+        {
+          msg: "There is no user with this email",
+        },
+        409
+      );
+    }
   },
   async delete(ctx) {
     const { token } = ctx.params;

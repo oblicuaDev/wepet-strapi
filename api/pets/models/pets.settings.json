@@ -78,8 +78,11 @@
       "type": "json"
     },
     "plan": {
-      "model": "plans",
-      "via": "pets"
+      "via": "pets",
+      "model": "plans"
+    },
+    "sub_end": {
+      "type": "date"
     }
   }
 }
