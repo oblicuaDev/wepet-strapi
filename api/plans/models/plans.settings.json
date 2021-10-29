@@ -44,7 +44,7 @@
       "via": "plan",
       "collection": "pets"
     },
-    "description": {
+    "description_anual": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -52,7 +52,23 @@
       },
       "type": "richtext"
     },
-    "link": {
+    "link_anual": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "description_mensual": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "link_mensual": {
       "pluginOptions": {
         "i18n": {
           "localized": true
