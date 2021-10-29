@@ -50,6 +50,14 @@
     },
     {
       "method": "POST",
+      "path": "/wepetusers/firstRegister",
+      "handler": "wepetusers.firstRegister",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
       "path": "/wepetusers/recover-password",
       "handler": "wepetusers.resetPassword",
       "config": {

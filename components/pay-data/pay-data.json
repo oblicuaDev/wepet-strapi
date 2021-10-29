@@ -2,7 +2,8 @@
   "collectionName": "components_pay_data_pay_data",
   "info": {
     "name": "pay_data",
-    "icon": "money-check-alt"
+    "icon": "money-check-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,9 @@
     },
     "mascara": {
       "type": "text"
+    },
+    "date": {
+      "type": "string"
     }
   }
 }

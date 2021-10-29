@@ -124,4 +124,26 @@ module.exports = {
       return ctx.send(respuesta, 400);
     }
   },
+  firstRegister: async (ctx) => {
+    let user = ctx.request.body;
+    console.log(user);
+    let entity = await strapi.services.wepetusers.create(user);
+    if (entity) {
+      return ctx.send(
+        {
+          msg: "User Created",
+          user: entity,
+        },
+        201
+      );
+    } else {
+      return ctx.send(
+        {
+          msg: "User not Created",
+          user: entity,
+        },
+        201
+      );
+    }
+  },
 };
