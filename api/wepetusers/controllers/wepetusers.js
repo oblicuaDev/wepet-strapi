@@ -1,5 +1,6 @@
 "use strict";
 const bcrypt = require("bcryptjs");
+const { parseMultipartData, sanitizeEntity } = require("strapi-utils");
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
  * to customize this controller
@@ -145,5 +146,14 @@ module.exports = {
         201
       );
     }
+  },
+  async update(ctx) {
+    const { id } = ctx.params;
+    let entity;
+    let user = ctx.request.body;
+    const hashedPassword = await bcrypt.hash(user.password, 10);
+    user.password = hashedPassword;
+    entity = await strapi.services.wepetusers.update({ id }, user);
+    return sanitizeEntity(entity, { model: strapi.models.wepetusers });
   },
 };
