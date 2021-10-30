@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_services_services_rels",
+  "info": {
+    "name": "services_rel",
+    "icon": "file-contract"
+  },
+  "options": {},
+  "attributes": {
+    "service": {
+      "model": "services"
+    },
+    "quatity": {
+      "type": "string"
+    }
+  }
+}

@@ -83,6 +83,11 @@
     },
     "sub_end": {
       "type": "date"
+    },
+    "services_rel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "services.services-rel"
     }
   }
 }

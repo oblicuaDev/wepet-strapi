@@ -6,13 +6,12 @@ module.exports = {
     let entities = await strapi.services.services.find();
     let response = [];
     entities.map((entity) => {
+      let found = entity.plan_quantity.find(
+        (element) => element.plan.id == planId
+      );
       response.push({
-        id: entity.id,
-        name: entity.name,
-        image: entity.image,
-        plan_quantity: entity.plan_quantity.find(
-          (element) => element.plan.id == planId
-        ),
+        service: entity.id,
+        quantity: found.quantity,
       });
     });
     return response;
