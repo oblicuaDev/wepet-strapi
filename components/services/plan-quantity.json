@@ -12,6 +12,16 @@
     },
     "quantity": {
       "type": "integer"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "available": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
