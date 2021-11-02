@@ -9,12 +9,15 @@ module.exports = {
       let found = entity.plan_quantity.find(
         (element) => element.plan.id == planId
       );
-      console.log(found);
-      response.push({
-        service: entity.id,
-        quantity: found.quantity,
-        available: found.available,
-      });
+      console.log(found.available);
+      console.log(found.quantity);
+      if (found != undefined) {
+        response.push({
+          service: entity.id,
+          quantity: found.quantity,
+          available: found.available,
+        });
+      }
     });
     return response;
   },
