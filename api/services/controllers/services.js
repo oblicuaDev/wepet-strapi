@@ -9,8 +9,6 @@ module.exports = {
       let found = entity.plan_quantity.find(
         (element) => element.plan.id == planId
       );
-      console.log(found.available);
-      console.log(found.quantity);
       if (found != undefined) {
         response.push({
           service: entity.id,

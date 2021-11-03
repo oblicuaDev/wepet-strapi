@@ -70,6 +70,15 @@
           "localized": true
         }
       }
+    },
+    "available_upgrade": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false
     }
   }
 }
