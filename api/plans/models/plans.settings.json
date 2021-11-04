@@ -52,14 +52,6 @@
       },
       "type": "richtext"
     },
-    "link_anual": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "description_mensual": {
       "pluginOptions": {
         "i18n": {
@@ -68,13 +60,13 @@
       },
       "type": "richtext"
     },
-    "link_mensual": {
+    "order": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string"
+      "type": "integer"
     }
   }
 }
