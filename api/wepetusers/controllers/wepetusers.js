@@ -151,8 +151,10 @@ module.exports = {
     const { id } = ctx.params;
     let entity;
     let user = ctx.request.body;
-    const hashedPassword = await bcrypt.hash(user.password, 10);
-    user.password = hashedPassword;
+    if (user.password) {
+      const hashedPassword = await bcrypt.hash(user.password, 10);
+      user.password = hashedPassword;
+    }
     entity = await strapi.services.wepetusers.update({ id }, user);
     return sanitizeEntity(entity, { model: strapi.models.wepetusers });
   },
