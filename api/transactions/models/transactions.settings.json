@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transactions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reference": {
+      "type": "string"
+    },
+    "wepetuser": {
+      "model": "wepetusers"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
