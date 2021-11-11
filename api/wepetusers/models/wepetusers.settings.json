@@ -59,6 +59,9 @@
       "type": "component",
       "repeatable": false,
       "component": "pay-data.pay-data"
+    },
+    "sub_id": {
+      "type": "string"
     }
   }
 }

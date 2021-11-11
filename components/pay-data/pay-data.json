@@ -10,16 +10,16 @@
     "user_cc": {
       "type": "string"
     },
-    "CVV": {
-      "type": "string"
-    },
-    "mascara_type": {
-      "type": "string"
-    },
-    "mascara": {
-      "type": "text"
-    },
     "date": {
+      "type": "string"
+    },
+    "card_number": {
+      "type": "password"
+    },
+    "secure_code": {
+      "type": "password"
+    },
+    "token": {
       "type": "string"
     }
   }
