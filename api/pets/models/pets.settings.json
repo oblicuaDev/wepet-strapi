@@ -88,6 +88,9 @@
       "type": "component",
       "repeatable": true,
       "component": "services.services-rel"
+    },
+    "id_sub": {
+      "type": "string"
     }
   }
 }

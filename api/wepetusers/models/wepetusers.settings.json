@@ -68,6 +68,9 @@
     },
     "plan_type": {
       "type": "string"
+    },
+    "id_sub": {
+      "type": "string"
     }
   }
 }
