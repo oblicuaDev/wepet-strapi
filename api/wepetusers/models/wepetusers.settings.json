@@ -60,9 +60,6 @@
       "repeatable": false,
       "component": "pay-data.pay-data"
     },
-    "sub_id": {
-      "type": "string"
-    },
     "customer_id": {
       "type": "string"
     },

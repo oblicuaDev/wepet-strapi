@@ -7,18 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "user_cc": {
-      "type": "string"
-    },
-    "date": {
-      "type": "string"
-    },
-    "card_number": {
-      "type": "password"
-    },
-    "secure_code": {
-      "type": "password"
-    },
     "token": {
       "type": "string"
     }
