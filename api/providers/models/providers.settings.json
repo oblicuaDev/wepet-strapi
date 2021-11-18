@@ -83,6 +83,16 @@
           "localized": true
         }
       }
+    },
+    "provider_services": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "provider.provider-services"
     }
   }
 }

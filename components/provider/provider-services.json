@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_provider_provider_services",
+  "info": {
+    "name": "provider_services",
+    "icon": "store"
+  },
+  "options": {},
+  "attributes": {
+    "service": {
+      "model": "services"
+    },
+    "id_service": {
+      "type": "string"
+    },
+    "link_service": {
+      "type": "string"
+    }
+  }
+}
