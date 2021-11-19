@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bills",
+  "info": {
+    "name": "bills"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "estado": {
+      "type": "string"
+    },
+    "factura": {
+      "type": "string"
+    },
+    "recibo": {
+      "type": "string"
+    },
+    "ref_payco": {
+      "type": "string"
+    },
+    "respuesta": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "string"
+    }
+  }
+}
