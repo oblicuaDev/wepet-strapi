@@ -94,6 +94,9 @@
     },
     "plan_type": {
       "type": "string"
+    },
+    "last_age_update": {
+      "type": "date"
     }
   }
 }
